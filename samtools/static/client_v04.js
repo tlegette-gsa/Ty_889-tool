@@ -58,6 +58,7 @@ const getNonSelectableElement = function (
   }
   content_col.appendChild(listItemContentHeader);
 
+  const resultsListItemContent = document.createElement('div');
   if (dbaName) {
     resultsListItemContent.appendChild(getDbaNameElement(dbaName));
   }
@@ -66,7 +67,6 @@ const getNonSelectableElement = function (
     resultsListItemContent.appendChild(getWebsiteElement(entityURL));
   }
 
-  const resultsListItemContent = document.createElement('div');
   resultsListItemContent.appendChild(
     getAddressAndCodesElement(city, stateOrProvinceCode, countryCode, ueiSAM, cageCode),
   );
