@@ -133,7 +133,7 @@ const getSelectableItemHeader = function (
   registrationExpirationDate,
 ) {
   const itemHeader = document.createElement('div');
-  itemHeader.className = 'text-primary-dark text-bold';
+  itemHeader.className = 'text-white text-bold';
   itemHeader.innerHTML = legalBusinessName;
 
   itemHeader.appendChild(getSelectableComplianceLabel(eightEightNine));
